@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unified Power Solutions (Pvt) Ltd - UPS, Solar Inverters, MPPT, SMPS, electronics projects, installation and maintenance in Karachi, Pakistan.">
+<title>Unified Power Solutions | Power Electronics & Solar Solutions</title>
+<style>
+:root{
+  --navy:#071a33; --blue:#0b63ce; --cyan:#12b5cb; --gold:#f5b400;
+  --light:#f4f8fc; --dark:#102033; --white:#fff; --muted:#64748b;
+  --shadow:0 14px 40px rgba(7,26,51,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{background:var(--navy);color:#dbeafe;font-size:.9rem;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(0,0,0,.07)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy)}
+.logo-mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:white;display:grid;place-items:center;font-size:22px;box-shadow:0 8px 20px rgba(11,99,206,.25)}
+.logo span{font-size:1.05rem;line-height:1.05}.logo small{display:block;color:var(--blue);font-size:.68rem;letter-spacing:.08em}
+.nav-links{display:flex;gap:26px;align-items:center;font-weight:600;font-size:.94rem}
+.nav-links a:hover{color:var(--blue)}
+.menu{display:none;border:0;background:none;font-size:28px;color:var(--navy);cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:9px;padding:13px 20px;font-weight:700;cursor:pointer;transition:.25s}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{transform:translateY(-2px);background:#0955ad}
+.btn-outline{border:1px solid #cbd5e1;color:var(--navy);background:#fff}.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hero{background:radial-gradient(circle at 80% 20%,rgba(18,181,203,.22),transparent 30%),linear-gradient(120deg,#06172e 0%,#0b2e58 55%,#075fa9 100%);color:white;padding:92px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);padding:7px 13px;border-radius:30px;font-size:.84rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.05;margin-bottom:20px}
+.hero h1 span{color:#52d9e9}
+.hero p{font-size:1.08rem;color:#d6e6f7;max-width:650px;margin-bottom:28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.power-card{position:relative;min-height:370px;border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.sun{position:absolute;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,#ffe27a 0 15%,#ffb300 16% 40%,rgba(255,179,0,.12) 41% 70%,transparent 71%);top:45px;right:60px}
+.inverter{position:relative;width:170px;height:190px;background:linear-gradient(160deg,#172b42,#071523);border-radius:14px;border:5px solid #27445f;box-shadow:0 20px 40px rgba(0,0,0,.35);z-index:2;padding:20px}
+.screen{height:45px;border-radius:7px;background:#092b28;border:1px solid #1b8d7d;color:#67f4d1;display:grid;place-items:center;font-family:monospace;font-size:14px}
+.lights{display:flex;gap:8px;margin-top:18px}.light{width:10px;height:10px;border-radius:50%;background:#38e89a;box-shadow:0 0 12px #38e89a}
+.wires{position:absolute;bottom:38px;left:0;right:0;display:flex;justify-content:space-around;color:#72d9e7;font-size:35px}
+section{padding:88px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 45px}.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}.section-head h2{font-size:clamp(1.8rem,3vw,2.7rem);margin:8px 0 10px;color:var(--navy)}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e5edf5;border-radius:18px;padding:28px;box-shadow:var(--shadow);transition:.25s}.card:hover{transform:translateY(-6px)}
+.icon{width:52px;height:52px;border-radius:14px;background:#e8f3ff;color:var(--blue);display:grid;place-items:center;font-size:25px;margin-bottom:17px}.card h3{margin-bottom:8px;color:var(--navy)}.card p{color:var(--muted);font-size:.95rem}
+.services{background:var(--light)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product{padding:26px;border-radius:18px;background:#fff;border:1px solid #e3ebf4;position:relative;overflow:hidden}
+.product:before{content:"";position:absolute;right:-45px;top:-45px;width:120px;height:120px;background:linear-gradient(135deg,#dff8fb,#dcecff);border-radius:50%}
+.product h3{color:var(--navy);margin-bottom:7px}.product p{color:var(--muted);font-size:.94rem}.tag{display:inline-block;margin-top:16px;padding:5px 10px;border-radius:20px;background:#edf6ff;color:var(--blue);font-size:.75rem;font-weight:700}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.about-visual{background:linear-gradient(135deg,#eaf7ff,#f6fbff);border-radius:26px;padding:40px;min-height:350px;display:grid;place-items:center;border:1px solid #dcecf8}
+.circuit{width:100%;height:260px;border-radius:18px;background:#071a33;position:relative;overflow:hidden}
+.circuit:before{content:"";position:absolute;inset:25px;background:linear-gradient(90deg,transparent 49%,#27c4d6 50%,transparent 51%),linear-gradient(0deg,transparent 49%,#27c4d6 50%,transparent 51%);opacity:.35}
+.node{position:absolute;width:18px;height:18px;border-radius:50%;background:#f5b400;box-shadow:0 0 18px #f5b400}.n1{left:15%;top:25%}.n2{right:20%;top:30%}.n3{left:25%;bottom:20%}.n4{right:14%;bottom:25%}
+.about h2{font-size:2.4rem;color:var(--navy);line-height:1.15;margin:8px 0 16px}.about p{color:var(--muted);margin-bottom:18px}.checks{display:grid;gap:11px;margin:22px 0}.checks div{font-weight:600}.checks span{color:#0a9b71;margin-right:8px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy);color:#fff;border-radius:22px;padding:28px;margin-top:30px}.stat{text-align:center}.stat strong{font-size:1.8rem;color:#63dce7;display:block}.stat small{color:#bfd0e4}
+.projects{background:var(--light)}
+.project-box{background:linear-gradient(120deg,#09203b,#0c5da5);color:#fff;border-radius:24px;padding:45px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.project-box h2{font-size:2rem;margin-bottom:10px}.project-box p{color:#d8e8f8}.project-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.project-list div{background:rgba(255,255,255,.08);padding:10px 12px;border-radius:8px;font-size:.9rem}
+.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-card{background:var(--navy);color:#fff;border-radius:22px;padding:35px}.contact-card h2{font-size:2rem;margin-bottom:10px}.contact-card p{color:#cbd9e9}.contact-item{display:flex;gap:14px;margin-top:22px;align-items:flex-start}.contact-item b{display:block}.contact-item span{color:#c5d5e7;font-size:.93rem}.contact-form{border:1px solid #e4ebf3;border-radius:22px;padding:35px;box-shadow:var(--shadow)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:15px}.field label{font-size:.85rem;font-weight:700;display:block;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid #d5e0eb;border-radius:9px;padding:12px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,99,206,.08)}textarea{min-height:130px;resize:vertical}
+footer{background:#041223;color:#b8c8da;padding:35px 0 20px}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:800}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.1);margin-top:25px;padding-top:18px;font-size:.85rem}
+#top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:none;place-items:center;z-index:900;box-shadow:0 8px 20px rgba(11,99,206,.3)}
+@media(max-width:850px){
+ .menu{display:block}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 5%;flex-direction:column;align-items:flex-start;box-shadow:0 12px 20px rgba(0,0,0,.08)}
+ .nav-links.open{display:flex}.hero-grid,.about-grid,.contact-grid,.project-box{grid-template-columns:1fr}.cards,.product-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media(max-width:560px){
+ .topbar .container{justify-content:center;text-align:center}.hero{padding:65px 0}.hero h1{font-size:2.35rem}.power-card{min-height:300px}.cards,.product-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.project-list{grid-template-columns:1fr}.section-head{margin-bottom:30px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="container">
+    <span>⚡ Professional Power Electronics Solutions</span>
+    <span>📍 Karachi, Pakistan &nbsp; | &nbsp; 📞 +92(0)3333999011</span>
+  </div>
+</div>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-mark">⚡</div>
+      <span>Unified Power Solutions<small>(Pvt) Ltd</small></span>
+    </a>
+    <button class="menu" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a>
+      <a href="#about">About</a><a href="#projects">Student Projects</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">POWER • SOLAR • ELECTRONICS</div>
+      <h1>Reliable Power.<br><span>Smarter Solutions.</span></h1>
+      <p>Unified Power Solutions (Pvt) Ltd provides designing, manufacturing, installation, repair and maintenance of UPS, Solar Inverters, MPPT, SMPS and custom electronics solutions in Karachi, Pakistan.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get a Consultation →</a>
+        <a class="btn btn-outline" href="#products">Explore Solutions</a>
+      </div>
+    </div>
+    <div class="power-card" aria-label="Power electronics illustration">
+      <div class="sun"></div>
+      <div class="inverter"><div class="screen">UPS • 230V</div><div class="lights"><i class="light"></i><i class="light"></i><i class="light"></i></div></div>
+      <div class="wires"><span>☀</span><span>⚡</span><span>⌁</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">What We Do</div><h2>Complete Power Electronics Services</h2><p>From concept and design to installation and after-sales maintenance, we provide practical engineering support.</p></div>
+    <div class="cards">
+      <div class="card"><div class="icon">⚙</div><h3>Design & Engineering</h3><p>Customized power electronics designs for residential, commercial, industrial and educational applications.</p></div>
+      <div class="card"><div class="icon">🏭</div><h3>Manufacturing</h3><p>Design and fabrication of UPS, solar inverter, MPPT, SMPS and custom electronic systems.</p></div>
+      <div class="card"><div class="icon">🔧</div><h3>Installation</h3><p>Professional installation, commissioning, testing and system setup with practical guidance.</p></div>
+      <div class="card"><div class="icon">🛠</div><h3>Repair & Maintenance</h3><p>Fault diagnosis, troubleshooting, repair and preventive maintenance for power electronics equipment.</p></div>
+      <div class="card"><div class="icon">☀</div><h3>Solar Power</h3><p>Solar inverter and MPPT solutions designed around system requirements and energy needs.</p></div>
+      <div class="card"><div class="icon">🎓</div><h3>Student Projects</h3><p>Technical assistance for university electronics projects, prototypes, testing and troubleshooting.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="products">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Our Expertise</div><h2>Power & Electronics Solutions</h2><p>Flexible solutions for backup power, solar energy and electronics development.</p></div>
+    <div class="product-grid">
+      <div class="product"><h3>UPS Systems</h3><p>Backup power solutions, custom design, troubleshooting, repair and maintenance.</p><span class="tag">Backup Power</span></div>
+      <div class="product"><h3>Solar Inverters</h3><p>Solar power conversion solutions for efficient and dependable energy systems.</p><span class="tag">Solar Energy</span></div>
+      <div class="product"><h3>MPPT Controllers</h3><p>Maximum Power Point Tracking solutions for optimizing solar panel performance.</p><span class="tag">PV Control</span></div>
+      <div class="product"><h3>SMPS</h3><p>Switch-mode power supply design, manufacturing, repair and application support.</p><span class="tag">Power Supply</span></div>
+      <div class="product"><h3>Custom Electronics</h3><p>Prototype and custom electronic circuits for practical engineering applications.</p><span class="tag">Custom Design</span></div>
+      <div class="product"><h3>Electronics Projects</h3><p>Hands-on assistance for university students with design, assembly, testing and debugging.</p><span class="tag">University Support</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-visual"><div class="circuit"><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i></div></div>
+    <div class="about">
+      <div class="eyebrow">About Unified Power Solutions</div>
+      <h2>Engineering knowledge turned into dependable solutions.</h2>
+      <p>Unified Power Solutions (Pvt) Ltd is focused on practical power electronics and renewable-energy solutions, serving customers and supporting students with engineering projects.</p>
+      <div class="checks">
+        <div><span>✓</span> Customized technical solutions</div>
+        <div><span>✓</span> Installation and commissioning support</div>
+        <div><span>✓</span> Repair and preventive maintenance</div>
+        <div><span>✓</span> Electronics project guidance for university students</div>
+      </div>
+      <div class="stats"><div class="stat"><strong>UPS</strong><small>Solutions</small></div><div class="stat"><strong>Solar</strong><small>Systems</small></div><div class="stat"><strong>SMPS</strong><small>Design</small></div><div class="stat"><strong>R&amp;M</strong><small>Support</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="project-box">
+      <div>
+        <div class="eyebrow" style="color:#63dce7">For University Students</div>
+        <h2>Need help with an Electronics Project?</h2>
+        <p>Get practical assistance with electronics project development, circuit concepts, prototyping, component selection, testing, troubleshooting and documentation.</p>
+        <div class="project-list"><div>🔌 Circuit Design</div><div>💻 Microcontroller Support</div><div>🔬 Testing & Debugging</div><div>⚡ Power Electronics</div></div>
+      </div>
+      <div style="text-align:center"><div style="font-size:90px">🎓</div><a class="btn btn-primary" href="#contact">Discuss Your Project</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Contact Us</div><h2>Let's discuss your power solution</h2><p>Contact Unified Power Solutions for product enquiries, service requests or electronics project assistance.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h2>Unified Power Solutions</h2>
+        <p>(Pvt) Ltd</p>
+        <div class="contact-item"><div>📍</div><div><b>Address</b><span>290 RKV Road 6, Model Colony,<br>Karachi, Pakistan</span></div></div>
+        <div class="contact-item"><div>📞</div><div><b>Phone</b><span><a href="tel:+923333999011">+92(0)3333999011</a></span></div></div>
+        <div class="contact-item"><div>✉</div><div><b>Email</b><span><a href="mailto:infoups97@gmail.com">infoups97@gmail.com</a></span></div></div>
+      </div>
+      <form class="contact-form" onsubmit="sendMessage(event)">
+        <div class="form-row"><div class="field"><label>Your Name</label><input id="name" required placeholder="Enter your name"></div><div class="field"><label>Phone</label><input id="phone" placeholder="Your phone number"></div></div>
+        <div class="field"><label>Email</label><input id="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>How can we help?</label><textarea id="message" required placeholder="Tell us about your UPS, solar, electronics or student project requirement..."></textarea></div>
+        <button class="btn btn-primary" type="submit">Send Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid"><div><div class="footer-brand">⚡ Unified Power Solutions (Pvt) Ltd</div><div>Power Electronics • Solar • Engineering</div></div><div>Karachi, Pakistan &nbsp; | &nbsp; +92(0)3333999011</div></div>
+    <div class="copyright">© <span id="year"></span> Unified Power Solutions (Pvt) Ltd. All rights reserved.</div>
+  </div>
+</footer>
+<a id="top" href="#home">↑</a>
+
+<script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+window.addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'grid':'none'});
+document.getElementById('year').textContent=new Date().getFullYear();
+function sendMessage(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const phone=document.getElementById('phone').value;
+  const email=document.getElementById('email').value;
+  const message=document.getElementById('message').value;
+  const subject=encodeURIComponent('Website Enquiry - '+name);
+  const body=encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`);
+  window.location.href=`mailto:infoups97@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+</body>
+</html>
